@@ -508,7 +508,7 @@ for TRIAL = 1:n.trials
     
     [~, ~, keyCode, ~] = KbCheck();
     
-    if any(keyCode)%==key.esc
+    if find(keyCode)==key.esc
         sca
         break;
     end
